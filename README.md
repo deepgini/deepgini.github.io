@@ -1,37 +1,9 @@
-## Welcome to GitHub Pages
+## DeepGini: Prioritizing Massive Tests to Reduce Labeling Cost
 
-You can use the [editor on GitHub](https://github.com/deepgini/deepgini.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Deep neural network (DNN) based systems have been deployed to assist various tasks, including many tasks in safety-critical scenarios. In company with the fantastic effectiveness on many tasks, these systems could also exhibit incorrect behaviors and lead to accidents and losses. Therefore, beyond the conventional accuracy-based evaluation, testing techniques that can detect incorrect behaviors in the earlier stage of software lifecycle is also necessary and critical. However, given the fact that automated testing oracle is often not available, testing DNN-based systems usually requires expensive human efforts to label the testing data. In order to reduce the efforts and, meanwhile, diagnose as many fault-inducing tests as possible in a limited time, developers usually want to ￿nd an ideal order of tests in which fault-inducing tests are ordered before the others. To this end, we propose DeepGini, a test prioritization technique designed based on a statistical perspective of DNN. Such a statisti- cal perspective allows us to transform the problem of measuring the possibility of misclassifying a test to the problem of measuring set impurity. To evaluate our technique, we conduct an extensive empirical study on four popular datasets. The experiment results show that DeepGini outperforms conventional coverage-based test prioritization in terms of both effectiveness and effciency.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### DeepGini: Prioritizing Tests of a DNN
 
-### Markdown
+The metric we use to measure the likelihood of misclassifcation is defined as below.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/deepgini/deepgini.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
