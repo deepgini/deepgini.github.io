@@ -43,5 +43,5 @@ The dataset and deep learning model we use are as follows:
 
 ![7.png](./src/7.png)
 
-![8.png](./src/7.png)
+![8.png](./src/8.png)
 ---
